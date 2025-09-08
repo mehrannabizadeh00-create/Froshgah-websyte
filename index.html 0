@@ -1,113 +1,0 @@
-<!DOCTYPE html>
-<html lang="fa" dir="rtl">
-<head>
-  <meta charset="UTF-8">
-  <title>فروشگاه پارچه</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
-</head>
-<body>
-  <!-- هدر -->
-  <header>
-    <h1>فروشگاه پارچه آنلاین</h1>
-    <nav>
-      <a href="index.html">خانه</a>
-      <a href="cart.html">سبد خرید</a>
-      <a href="about.html">درباره ما</a>
-      <a href="contact.html">تماس</a>
-    </nav>
-  </header>
-
-  <!-- لیست محصولات -->
-  <section class="product-list">
-    <div class="product">
-      <img src="images/fabric1.jpg" alt="پارچه حریر">
-      <h3>پارچه حریر</h3>
-      <p>قیمت: 150,000 تومان</p>
-      <p>جنس: حریر - مناسب لباس مجلسی</p>
-      <button onclick="addToCart('پارچه حریر',150000)">افزودن به سبد خرید</button>
-    </div>
-
-    <div class="product">
-      <img src="images/fabric2.jpg" alt="پارچه کتان">
-      <h3>پارچه کتان</h3>
-      <p>قیمت: 220,000 تومان</p>
-      <p>جنس: کتان - مناسب مانتو و شلوار</p>
-      <button onclick="addToCart('پارچه کتان',220000)">افزودن به سبد خرید</button>
-    </div>
-
-    <div class="product">
-      <img src="images/fabric3.jpg" alt="پارچه مخمل">
-      <h3>پارچه مخمل</h3>
-      <p>قیمت: 300,000 تومان</p>
-      <p>جنس: مخمل نرم - مناسب پرده و رومبلی</p>
-      <button onclick="addToCart('پارچه مخمل',300000)">افزودن به سبد خرید</button>
-    </div>
-  </section>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="fa" dir="rtl">
-<head>
-  <meta charset="UTF-8">
-  <title>سبد خرید</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
-</head>
-<body>
-  <header>
-    <h1>سبد خرید شما</h1>
-    <nav>
-      <a href="index.html">خانه</a>
-    </nav>
-  </header>
-
-  <section id="cart-items"></section>
-  <h3 id="total"></h3>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="fa" dir="rtl">
-<head>
-  <meta charset="UTF-8">
-  <title>درباره ما</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <h1>درباره فروشگاه ما</h1>
-    <nav>
-      <a href="index.html">خانه</a>
-    </nav>
-  </header>
-
-  <section>
-    <p>
-      ما عرضه‌کننده بهترین انواع پارچه با کیفیت عالی و قیمت مناسب هستیم.  
-      هدف ما راحتی خرید شما و ارائه تنوع بالا در پارچه‌های مختلف است.
-    </p>
-  </section>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="fa" dir="rtl">
-<head>
-  <meta charset="UTF-8">
-  <title>تماس با ما</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <h1>تماس با ما</h1>
-    <nav>
-      <a href="index.html">خانه</a>
-    </nav>
-  </header>
-
-  <section>
-    <p>📍 آدرس: تهران - خیابان نمونه - پلاک 12</p>
-    <p>📞 تلفن: 0912-0000000</p>
-    <p>📧 ایمیل: fabricshop@mail.com</p>
-  </section>
-</body>
-</html>
