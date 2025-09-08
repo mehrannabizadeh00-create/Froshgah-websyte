@@ -1,0 +1,31 @@
+let cart = [];
+
+function addToCart(name, price) {
+  cart.push({ name, price });
+  localStorage.setItem("cart", JSON.stringify(cart));
+  alert(name + " به سبد خرید اضافه شد!");
+}
+
+function loadCart() {
+  const saved = localStorage.getItem("cart");
+  if (saved) cart = JSON.parse(saved);
+
+  const cartItems = document.getElementById("cart-items");
+  const totalEl = document.getElementById("total");
+
+  if (cartItems) {
+    cartItems.innerHTML = "";
+    let total = 0;
+
+    cart.forEach(item => {
+      const div = document.createElement("div");
+      div.textContent = `${item.name} - ${item.price} تومان`;
+      cartItems.appendChild(div);
+      total += item.price;
+    });
+
+    totalEl.textContent = "جمع کل: " + total + " تومان";
+  }
+}
+
+window.onload = loadCart;
